@@ -3,7 +3,23 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/topics/generics/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/topics/generics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/hibernate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/hibernate/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/topics/rmi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/topics/rmi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/data-access/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/data-access/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring-mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring-mvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/spring_tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topics/spring/src/main/resources" charset="UTF-8" />
   </component>
 </project>

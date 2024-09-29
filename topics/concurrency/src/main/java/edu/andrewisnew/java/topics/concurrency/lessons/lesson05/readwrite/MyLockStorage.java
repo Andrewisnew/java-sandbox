@@ -24,7 +24,7 @@ public class MyLockStorage implements Storage {
         try {
             //reading...
             try {
-                TimeUnit.MILLISECONDS.sleep(500);
+                TimeUnit.MILLISECONDS.sleep(1500);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -37,6 +37,7 @@ public class MyLockStorage implements Storage {
     @Override
     public String write(String newVal) {
         writeLock.lock();
+        readLock.lock();
         try {
             //writing...
             try {
@@ -48,6 +49,7 @@ public class MyLockStorage implements Storage {
             value = newVal;
             return oldValue;
         } finally {
+            readLock.unlock();
             writeLock.unlock();
         }
     }

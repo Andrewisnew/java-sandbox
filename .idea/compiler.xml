@@ -6,8 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="core" />
+        <module name="spring_tests (1)" />
+        <module name="spring-mvc" />
         <module name="generics" />
+        <module name="spring_boot" />
+        <module name="spring_boot_tests" />
+        <module name="data-access" />
+        <module name="spring_tests" />
+        <module name="hibernate" />
         <module name="concurrency" />
+        <module name="spring_aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

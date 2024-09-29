@@ -1,0 +1,84 @@
+<persistence
+        version="2.1"
+        xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence_2_1.xsd">
+    <persistence-unit name="HiberPU">
+<!--        <jta-data-source>myDS</jta-data-source>-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.User</class>
+        <class>edu.andrewisnew.java.hibernate.Apple</class>
+        <class>edu.andrewisnew.java.hibernate.GreenApple</class>
+        <class>edu.andrewisnew.java.hibernate.Item</class>
+        <class>edu.andrewisnew.java.hibernate.Types</class>
+        <class>edu.andrewisnew.java.hibernate.MonetaryAmountConverter</class> <!--для autoApply-->
+        <class>edu.andrewisnew.java.hibernate.secondary_table.Book</class> <!--для autoApply-->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+<!--        <validation-mode>CALLBACK</validation-mode> &lt;!&ndash; CALLBACK - Если нет валидатора в зависимостях, то упадёт исключение при создании EntityManagerFactory &ndash;&gt;-->
+        <properties>
+<!--            <property-->
+<!--                    name="javax.persistence.schema-generation.database.action"-->
+<!--                    value="drop-and-create"/>-->
+<!--            <property name="hibernate.format_sql" value="true"/>-->
+<!--            <property name="hibernate.use_sql_comments" value="true"/>-->
+        </properties>
+    </persistence-unit>
+
+        <persistence-unit name="TablePerClassMappedSuperclass">
+                <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+                <class>edu.andrewisnew.java.hibernate.inheritance.table_per_class_mapped_superclass.Circle</class>
+                <class>edu.andrewisnew.java.hibernate.inheritance.table_per_class_mapped_superclass.Rectangle</class>
+                <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        </persistence-unit>
+
+    <persistence-unit name="InheritanceTablePerClass">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_table_per_class.Circle</class>
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_table_per_class.Rectangle</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    </persistence-unit>
+
+    <persistence-unit name="InheritanceCommonTable">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_common_table.Circle</class>
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_common_table.Rectangle</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    </persistence-unit>
+
+    <persistence-unit name="InheritanceJoined">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_joined.Circle</class>
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_joined.Rectangle</class>
+<!--        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_joined.Shape</class>-->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    </persistence-unit>
+
+    <persistence-unit name="InheritanceAssociations">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_associations.Circle</class>
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_associations.Rectangle</class>
+        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_associations.Cookie</class>
+        <!--        <class>edu.andrewisnew.java.hibernate.inheritance.inheritance_joined.Shape</class>-->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    </persistence-unit>
+
+    <persistence-unit name="Collections">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>edu.andrewisnew.java.hibernate.collections.Item</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    </persistence-unit>
+</persistence>

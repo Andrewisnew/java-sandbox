@@ -8,24 +8,35 @@
     <artifactId>java</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <spring.version>6.0.12</spring.version>
+        <log4j2.version>2.22.0</log4j2.version>
+        <junit5.version>5.9.3</junit5.version>
+        <aspectj.version>1.9.9.1</aspectj.version>
+        <spring-test.version>6.1.4</spring-test.version>
+        <junit.version>4.13.2</junit.version>
+        <hibernate.version>5.6.15.Final</hibernate.version>
+        <postgres.version>42.7.3</postgres.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>18</source>
-                    <target>18</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    <properties>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
-    </properties>
     <modules>
         <module>topics</module>
+        <module>topics/spring/core</module>
+        <module>topics/spring/spring_boot</module>
+        <module>topics/spring/spring_tests</module>
     </modules>
 
 

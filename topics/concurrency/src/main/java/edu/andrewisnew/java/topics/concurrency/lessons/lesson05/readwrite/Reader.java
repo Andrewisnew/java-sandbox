@@ -14,6 +14,7 @@ public class Reader extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 30; i++) {
+            System.out.println("[READER] " + name + " came to the storage");
             String read = storage.read();
             System.out.println("[READER] " + name + " read: " + read);
             try {

@@ -15,6 +15,7 @@ public class Writer extends Thread {
     public void run() {
         for (int i = 0; i < 10; i++) {
             String newVal = i + " " + name + " written that he have " + i + " ideas";
+            System.out.println("[WRITER]" + name + " came to the storage");
             String writtenBefore = storage.write(newVal);
             System.out.println("[WRITER] " + name + " rewrite from: " + writtenBefore + ", to: " + newVal);
             try {

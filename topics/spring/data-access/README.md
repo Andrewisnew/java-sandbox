@@ -1,0 +1,4 @@
+org.springframework.transaction.support.TransactionSynchronizationManager#isActualTransactionActive
+org.springframework.transaction.support.TransactionTemplate - для создания транзакции
+org.springframework.transaction.support.DefaultTransactionDefinition - при создании новой транзакции
+org.springframework.transaction.support.AbstractPlatformTransactionManager#getTransaction - взятие транзакции

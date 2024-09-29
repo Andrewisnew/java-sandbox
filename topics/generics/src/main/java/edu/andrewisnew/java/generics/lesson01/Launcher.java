@@ -23,7 +23,7 @@ public class Launcher {
 
         c = stringBox;
         stringBox = c;
-        b = a;
+//        b = a;
 
     }
 }
